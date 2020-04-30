@@ -1,0 +1,58 @@
+.createNew {
+    width: 130px;
+    height: 50px;
+}
+
+.toPass {
+    width: 110px;
+    height: 50px;
+    background-color: red;
+}
+
+.createCont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contButt{
+    display: flex;
+    justify-content: center;
+}
+
+.question{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 40%;
+    min-height: 40px;
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 13px 0px;
+}
+
+.question input {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}
+.question li {
+    list-style-type: none;
+}
+
+.question h1 {
+    margin: 0px;
+}
+
+.delButt {
+    height: 40px;
+    width: 80px;
+    background-color: red;
+}
+.editButt {
+    height: 40px;
+    width: 80px;
+    background-color: blue;
+}
