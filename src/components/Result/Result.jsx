@@ -7,14 +7,7 @@ import './Result.css';
 function Result({rating,max,reset}) {
 
     const balls = rating*(12/max);
-   
-    const emotion = () => {
-        if (balls<4) return <h1>You so bad((</h1>
-        else if (balls<8) return <h1>So-So</h1>
-        else if (balls<10) return <h1>Not bad!</h1>
-        else if (balls<13) return <h1>Very Nice!!!</h1>
-    }
-    console.log(balls)
+
   return (
    <div className='result'>
      <div className='balls'>

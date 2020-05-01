@@ -77,10 +77,10 @@ const Form = ({question,idQ,isShow,close,create,editFormQ}) => {
     const listQ = Object.keys(item).map((q,id2) => {
       if(id2>0) return null;
       return (<>
-      <h1>question {id+1}</h1>
-      <div className='createdQF' key={id}>
-         <input type='radio' id={'ch' + id} name='question' onInput={stateCorrect}></input>
-         <input type='text'  id={'t' + id} onChange={stateTitle}></input>
+      <h1 key={ 'title' + id}>question {id+1}</h1>
+      <div className='createdQF' key={'div' + id}>
+         <input type='radio' id={'ch' + id} name='question' onInput={stateCorrect} key={'check' + id}></input>
+         <input type='text'  id={'t' + id} onChange={stateTitle} key={'text' + id}></input>
       </div>
       </>)
     })
@@ -89,10 +89,10 @@ const Form = ({question,idQ,isShow,close,create,editFormQ}) => {
 
   const listEF = idQ !== null ? Object.keys(question.matters).map((q,id) => {
       return (<>
-        <h1>question {id+1}</h1>
-        <div className='createdQF' key={id}>
-            <input type='radio' id={'ch' + id} name='question' onInput={stateCorrect}></input> 
-           <input type='text' defaultValue={question.matters[q].title} id={'t' + id} onChange={stateTitle}></input>
+        <h1 key={ 'title' + id}>question {id+1}</h1>
+        <div className='createdQF' key={'div' + id}>
+            <input type='radio' id={'ch' + id} name='question' onInput={stateCorrect} key={'check' + id}></input> 
+           <input type='text' defaultValue={question.matters[q].title} id={'t' + id} onChange={stateTitle} key={'text' + id}></input>
         </div>
         </>)    
   }) : null;
