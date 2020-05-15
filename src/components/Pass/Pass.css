@@ -1,45 +1,44 @@
-.contPass{
-    display: flex;
-    align-items: center;
-    min-height: 600px;
-    background-color: grey;
-    flex-direction: column;
-    justify-content: space-around;
+.contPass {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  background-color: grey;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .question {
-    background-color: white;
+  background-color: white;
 }
 
 .progress {
-    height: 30px;
-    width: 60px;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 30px;
+  width: 60px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkButt {
-    width: 100px;
-    height: 50px;
-
+  width: 100px;
+  height: 50px;
 }
 
 .qq {
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .checkCont {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.checkRes{
-    width: 100px;
-    height: 50px;
-    background-color:darkorange;
+.checkRes {
+  width: 100px;
+  height: 50px;
+  background-color: darkorange;
 }

@@ -1,16 +1,16 @@
 header {
-    max-width: 100%;
-    margin: auto;
-    height: 100px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;   
-    background-color: blue;
+  max-width: 100%;
+  margin: auto;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: blue;
 }
 
 .title {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
