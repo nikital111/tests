@@ -37,11 +37,13 @@ function Create({ questions, show, deleteQ, editQ }) {
         <button className="createNew" type="button" onClick={show}>
           New question
         </button>
-        <NavLink exact to="/pass">
-          <button className="toPass" type="button">
-            Go to test
-          </button>
-        </NavLink>
+        {questions.length === 1 ? (
+          <NavLink exact to="/pass">
+            <button className="toPass" type="button">
+              Go to test
+            </button>
+          </NavLink>
+        ) : null}
       </div>
       <Form />
     </>
