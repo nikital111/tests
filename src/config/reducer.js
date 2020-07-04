@@ -15,7 +15,7 @@ const initialState = {
   max: null,
 };
 
-export default (state = initialState, action) => {
+const reduceMain = (state = initialState, action) => {
   switch (action.type) {
     case "CREATE_Q": {
       return {
@@ -96,3 +96,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default reduceMain;

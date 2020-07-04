@@ -1,4 +1,4 @@
-// @flow
+
 import React from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -37,7 +37,7 @@ function Create({ questions, show, deleteQ, editQ }) {
         <button className="createNew" type="button" onClick={show}>
           New question
         </button>
-        {questions.length === 1 ? (
+        {questions.length > 0 ? (
           <NavLink exact to="/pass">
             <button className="toPass" type="button">
               Go to test
