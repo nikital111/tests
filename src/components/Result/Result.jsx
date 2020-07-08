@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import "./Result.css";
 
-function Result({ rating, max, reset }) {
+export function Result({ rating, max, reset }) {
   const balls = rating * (12 / max);
 
   return (
@@ -16,10 +16,10 @@ function Result({ rating, max, reset }) {
         {balls < 4
           ? "You so bad("
           : balls < 8
-          ? "So-So)"
-          : balls < 10
-          ? "Not bad!"
-          : "Very nice!!!"}
+            ? "So-So)"
+            : balls < 10
+              ? "Not bad!"
+              : "Very nice!!!"}
       </div>
       <NavLink exact to="/">
         <button className="startNew" onClick={reset}>
@@ -44,3 +44,5 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Result);
+
+
